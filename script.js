@@ -1,58 +1,43 @@
 $(document).ready(function () {
-
-    var data = [
-        ['Jazz', 'Honda', '2019-02-12', '', true, '$ 2.000,00', '#777700'],
-        ['Civic', 'Honda', '2018-07-11', '', true, '$ 4.000,01', '#007777'],
-    ];
+//data should hold the jquery api calls to pipulated the clumns below
+    var data = [ 
+    ]
      
     jexcel(document.getElementById('spreadsheet'), {
         data:data,
         columns: [
-            {
-                type: 'text',
-                title:'Car',
-                width:90
-            },
-            {
-                type: 'dropdown',
-                title:'Make',
-                width:120,
-                source:[
-                    "Alfa Romeo",
-                    "Audi",
-                    "Bmw",
-                    "Chevrolet",
-                    "Chrystler",
-                    // (...)
-                  ]
-            },
-            {
-                type: 'calendar',
-                title:'Available',
-                width:120
-            },
-            {
-                type: 'image',
-                title:'Photo',
-                width:120
-            },
-            {
-                type: 'checkbox',
-                title:'Stock',
-                width:80
-            },
-            {
-                type: 'numeric',
-                title:'Price',
-                mask:'$ #.##,00',
-                width:80,
-                decimal:','
-            },
-            {
-                type: 'color',
-                width:80,
-                render:'square',
-            },
+            { type: 'text', title:'SKU', width:120 },
+            { type: 'text', title:'QTY', width:120 },
+            { type: 'text', title:'UPC', width:120 },
+            { type: 'text', title:'Size', width:120 },
+            { type: 'text', title:'Color', width:120 },
+            { type: 'text', title:'Cost', width:120 },
+            { type: 'text', title:'Brand', width:120 },
+            { type: 'text', title:'Description', width:120 },
+            { type: 'text', title:'Image_1', width:120 },
+            { type: 'text', title:'Image_2', width:120 },
+            { type: 'text', title:'Image_3', width:120 },
+            { type: 'text', title:'Image_4', width:120 },
+            { type: 'text', title:'Image_5', width:120 },
+            { type: 'text', title:'Image_6', width:120 },
+            { type: 'text', title:'Weight', width:120 },
+            { type: 'text', title:'Category', width:120 },
+            { type: 'text', title:'Name', width:120 },
+            { type: 'text', title:'Meta_Keywords', width:120 },
+            { type: 'text', title:'Material', width:120 },
+            { type: 'text', title:'Tags', width:120 },
+            { type: 'text', title:'Unique Parents', width:120 },
+            { type: 'text', title:'Price', width:120 },
+            { type: 'text', title:'Compare At', width:120 },
+            { type: 'text', title:'CREATE', width:120 },
+            { type: 'text', title:'Already Exists?', width:120 },
+            { type: 'checkbox', title:'Select to Push Ind.', width:120 },
+            
          ]
     });
+     
+    document.getElementById('download').onclick = function () {
+        mySpreadsheet.download();
+    }
+    
 });

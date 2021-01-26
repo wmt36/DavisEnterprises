@@ -1,17 +1,113 @@
 <!DOCTYPE html>
 <html>
-<script src="https://bossanova.uk/jexcel/v4/jexcel.js"></script>
-<link rel="stylesheet" href="https://bossanova.uk/jexcel/v4/jexcel.css" type="text/css" />
- 
-<script src="https://jsuites.net/v3/jsuites.js"></script>
-<link rel="stylesheet" href="https://jsuites.net/v3/jsuites.css" type="text/css" />
- 
-<div id="spreadsheet"></div>
- <body>
+  <script src="https://bossanova.uk/jexcel/v4/jexcel.js"></script>
+  <link rel="stylesheet" href="index.css">
+  <link
+    rel="stylesheet"
+    href="https://bossanova.uk/jexcel/v4/jexcel.css"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous"
+  />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
- <script src="script.js"></script>
-</body>
+  <script src="https://jsuites.net/v3/jsuites.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://jsuites.net/v3/jsuites.css"
+    type="text/css"
+  />
+  
+
+  <body>
+    <div id="jb" class="jumbotron jumbotron-fluid">
+          <h1>Davis Enterprises</h1>
+          <p>Choose vendor in drop down</p>
+          <div class="btn-group">
+            <button class="btn btn-danger">Select A Vendor</button>
+            <button
+              type="button"
+              class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Great Deals Dist</a>
+              <a class="dropdown-item" href="#">Wood Underwear</a>
+              <a class="dropdown-item" href="#">Fragrance X</a>
+              <a class="dropdown-item" href="#">Resultco</a>
+              <a class="dropdown-item" href="#">Coaster Furniture</a>
+              <a class="dropdown-item" href="#">Generic Feed</a>
+              <a class="dropdown-item" href="#">Shopify Direct</a>
+              <a class="dropdown-item" href="#">Shopify Scrape</a>
+            </div>
+          </div>
+     
+      </div>
+
+    <div class="btn-group">
+      <button class="btn btn-danger">Current Vendor name here</button>
+      <button
+        type="button"
+        class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Import and Process Data</a>
+        <a class="dropdown-item" href="#">Download Shopify Inventory</a>
+        <a class="dropdown-item" href="#">Upload Products</a>
+      </div>
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-danger">Existing Item Update</button>
+      <button
+        type="button"
+        class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Refresh</a>
+        <a class="dropdown-item" href="#">Update Inventory</a>
+        <a class="dropdown-item" href="#">Update Existing Products values</a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div id="spreadsheet"></div>
+    <br>
+    <br>
+    <button id="download" type="button" class="btn btn-secondary">
+        Export my spreadsheet as CSV
+      </button>
+
+    <!-- adding the jquery Librarys so we have access to the functionailtis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Linking script file where functinaility for spread sheet is -->
+    <script src="script.js"></script>
+  </body>
 </html>
